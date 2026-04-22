@@ -1,0 +1,15 @@
+.self-introduction__sns-item:nth-child(odd) {
+    background-color: yellow;
+}
+
+.self-introduction__sns-item:nth-child(even) {
+    background-color: pink;
+}
+.self-introduction__sns-link {
+    text-decoration: none;
+}
+
+.self-introduction__sns-link:hover {
+    color: red;
+    text-decoration: none;
+}

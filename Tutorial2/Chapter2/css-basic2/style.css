@@ -1,0 +1,22 @@
+p {
+    color: blue;
+}
+
+.text {
+    color: red;
+}
+
+/* 詳細度0-1-0-0 */
+/* 上記のコードだと、IDセレクタの詳細度が高いため、緑色が反映される */
+#intro {
+    color: green;
+}
+
+/* p+.text2で詳細度が上がり、赤色が反映される */
+p.text2 {
+    color: red;
+}
+
+.text2 {
+    color: orange;
+}
