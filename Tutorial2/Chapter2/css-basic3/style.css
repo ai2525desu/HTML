@@ -1,0 +1,13 @@
+.container {
+    height: 1000px;
+    /* 背景画像のURLを明記すると背景に画像 */
+    background-image: url(../self-introduction/images/pc_green.png);
+    /* 背景画像を繰り返し表示するかの設定 */
+    background-repeat: no-repeat;
+    /* 背景画像をどの位置に表示するのか設定 */
+    background-position: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
