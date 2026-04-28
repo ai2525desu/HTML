@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FlexBox 基礎2-2-3</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--BEM改善前 -->
+        <!-- <div class="flexbox-basic__container">
+            <header class="flexbox-basic__site-header">
+                <h1 class="flexbox-basic__header-title">My&nbsp;Site</h1>
+                <nav class="flexbox-basic__header-nav">
+                    <ul class="flexbox-basic__nav-list">
+                        <li class="flexbox-basic__nav-item">ホーム</li>
+                        <li class="flexbox-basic__nav-item">サービス</li>
+                        <li class="flexbox-basic__nav-item">お問い合わせ</li>
+                    </ul>
+                </nav>
+            </header>
+        </div> -->
+
+        <!-- BEM改善後 -->
+        <!-- flex-basicは学習上ではOKだが、実務では全体の塊を表すBlockとしてlayoutやcontainerを用いる -->
+        <div class="layout">
+            <header class="site-header">
+                <h1 class="site-header__title">My&nbsp;Site</h1>
+                <nav class="site-header__nav">
+                    <ul class="site-header__list">
+                        <li class="site-header__item">
+                            <a href="#">ホーム</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a href="#">サービス</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a href="#">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <main class="main-content">
+                    <div class="card-container">
+                        <div class="card">
+                            <p>カード1</p>
+                        </div>
+                        <div class="card">
+                            <p>カード2</p>
+                        </div>
+                        <div class="card">
+                            <p>カード3</p>
+                        </div>
+                        <div class="card">
+                            <p>カード4</p>
+                        </div>
+                    </div>
+                </main>
+                <aside class="sidebar">
+                    <p>サイドバー表示練習</p>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>

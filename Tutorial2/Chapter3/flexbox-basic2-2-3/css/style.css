@@ -1,0 +1,51 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.site-header__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+.site-header__list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-header__list a:hover {
+    text-decoration-line: underline;
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    /* 残りのスペースをすべて埋める */
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    background-color: lightgreen;
+}
+
+.card-container {
+    display: flex;
+    /*  カードの表示形式の折り返しの有無について設定 */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    /* カードの基本幅を設定 */
+    flex-basis: 300px;
+}

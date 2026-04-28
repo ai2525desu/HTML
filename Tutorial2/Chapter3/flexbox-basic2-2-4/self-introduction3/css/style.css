@@ -1,0 +1,48 @@
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+    color: #333;
+}
+
+#profile-card {
+    width: 600px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.self-introduction__title {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.self-introduction__profile-img {
+    display: block;
+    width: 150px;
+    margin: 0 auto 20px;
+    /* 丸になっているかの確認のためのborder*/
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.self-introduction__subtitle {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.self-introduction__sns-list {
+    list-style: none;
+    padding: 0;
+}
+
+.self-introduction__sns-link {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.self-introduction__sns-link:hover {
+    text-decoration: underline;
+}
