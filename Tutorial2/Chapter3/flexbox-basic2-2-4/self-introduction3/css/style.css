@@ -33,16 +33,27 @@ body {
     margin-top: 30px;
 }
 
-.self-introduction__sns-list {
+.self-introduction__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
-.self-introduction__sns-link {
+.self-introduction__social-link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
     text-decoration: none;
-    color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    /*  背景色の変化する秒数を指定して滑らかに見せてる */
+    transition: background-color 0.3s;
 }
 
-.self-introduction__sns-link:hover {
+.self-introduction__social-link:hover {
     text-decoration: underline;
+    background-color: #2980b9;
 }
