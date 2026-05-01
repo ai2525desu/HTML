@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.item-4-cols {
+    grid-column: span 4;
+    background-color: aquamarine;
+}
+
+.item-2-cols {
+    grid-column: span 2;
+    background-color: yellowgreen;
+}
+.item-6-cols {
+    grid-column: span 6;
+    background-color: yellow;
+}

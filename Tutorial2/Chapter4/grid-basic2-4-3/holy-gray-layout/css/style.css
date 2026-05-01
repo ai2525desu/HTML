@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/*
+・ブラウザ上でcontainerの外に余白ができるのは、bodyでもともとブラウザに設定されている余白部分。
+消したい場合は、bodyタグにmargin:0;を適用
+*/
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: lightcoral;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightcyan;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: lightgoldenrodyellow;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightgreen;
+}
