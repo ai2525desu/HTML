@@ -1,0 +1,79 @@
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+    color: #333;
+}
+
+#profile-card {
+    width: 600px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "name name"
+        "image intro"
+        "social social";
+    gap: 20px;
+    padding: 30px;
+}
+
+.self-introduction__title {
+    grid-area: name;
+    margin: 0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.self-introduction__profile-img {
+    display: grid;
+    grid-area: image;
+    width: 150px;
+    height: 150px;
+    /* 丸になっているかの確認のためのborder*/
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.self-introduction__text {
+    grid-area: intro;
+    margin: 0;
+}
+
+.social-section {
+    grid-area: social;
+}
+
+.social-section__title {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.social-section__links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-section__link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    /*  背景色の変化する秒数を指定して滑らかに見せてる */
+    transition: background-color 0.3s;
+}
+
+.social-section__link:hover {
+    text-decoration: underline;
+    background-color: #2980b9;
+}
